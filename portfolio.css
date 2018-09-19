@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body { height: 100%; }
+
+body{
+  font-family: 'Varela Round', sans-serif;
+  color: #333;
+}
+
+.section-title{
+  display: inline-block;
+  font-size: 30px;
+  height: 40px;
+  border-bottom: 1px solid #76787a;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  margin: 6px auto 0;
+  width: 0;
+  border-bottom: 1px solid #028090;
+  transition: width 0.3s ease-in-out;
+}
+
+.link:hover::after{
+  width: 100%;
+}
+
+/* header */
+
+header{
+  background-color: #E1E2EF;
+  position: relative;
+  height: 100%
+}
+
+.title{
+    font-family: 'Londrina Outline', cursive;
+    font-size: 75px;
+    font-weight: bold;
+    width: 500px;
+    height: 150px;
+    border-radius: 5px;
+    line-height: 150px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    color: #028090;
+}
+
+
+header .sns{
+  display: inline-flex;
+  float: right;
+  margin-top: 10px;
+}
+
+header .sns a i{
+  margin-right: 15px;
+  font-size: 30px;
+  color: #028090;
+}
+
+.nav{
+  width: 900px;
+}
+
+.nav li a{
+  color: #028090;
+  padding-right: 10px;
+  font-size: 25px
+}
+
+/* introduction */
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.flex h2{
+  margin: 0 auto;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.flex h2::after{
+  content: attr(data-subtitle);
+  display: block;
+  font-size: 16px;
+  color: #aaa;
+  padding: 10px 0;
+}
+
+.text-contents{
+  width: 350px;
+  margin: 0 auto;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+
+.to-head{
+  cursor: pointer;
+  display: inline-block;
+}
+
+footer .sns a i{
+  margin-right: 15px;
+  font-size: 20px;
+  color: #028090;
+}
