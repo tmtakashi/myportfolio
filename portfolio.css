@@ -4,14 +4,21 @@
 
 html, body { height: 100%; }
 
+html {
+  font-size: 62.5%;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 body{
-  font-family: 'Varela Round', sans-serif;
+  font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   color: #333;
+  font-size: 1.4rem;
 }
 
 .section-title{
   display: inline-block;
-  font-size: 30px;
+  font-size: 3rem;
   height: 40px;
   border-bottom: 1px solid #76787a;
 }
@@ -32,26 +39,22 @@ body{
 /* header */
 
 header{
-  background-color: #E1E2EF;
+  background-image: url("images/header.jpg");
+  background-size: cover;
   position: relative;
-  height: 100%
+  height: 100%;
+  color: #fff;
 }
 
 .title{
-    font-family: 'Londrina Outline', cursive;
-    font-size: 75px;
+    font-size: 70px;
     font-weight: bold;
-    width: 500px;
+    width: 60%;
     height: 150px;
-    border-radius: 5px;
-    line-height: 150px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    color: #f2f2f2;
     position: absolute;
-    margin: auto;
-    color: #028090;
+    top: 52%;
+    left: 20%;
 }
 
 
@@ -64,7 +67,7 @@ header .sns{
 header .sns a i{
   margin-right: 15px;
   font-size: 30px;
-  color: #028090;
+  color: #fff;
 }
 
 .nav{
@@ -72,37 +75,34 @@ header .sns a i{
 }
 
 .nav li a{
-  color: #028090;
   padding-right: 10px;
-  font-size: 25px
+  font-size: 25px;
+  color: #fff;
 }
 
-/* introduction */
-
-.flex {
+/* about */
+.thumbnail-name {
+  margin: 50px auto 20px;
+  width: 400px;
   display: flex;
   justify-content: space-around;
-  padding-top: 20px;
 }
-
-.flex h2{
-  margin: 0 auto;
-  font-size: 30px;
-  font-weight: normal;
-}
-
-.flex h2::after{
-  content: attr(data-subtitle);
+.thumbnail {
   display: block;
-  font-size: 16px;
-  color: #aaa;
-  padding: 10px 0;
+  float: left;
 }
-
+.name {
+  margin-top: 50px;
+  float: left;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
 .text-contents{
   width: 350px;
   margin: 0 auto;
+  line-height: 2.5;
 }
+
 
 /* footer */
 footer {
