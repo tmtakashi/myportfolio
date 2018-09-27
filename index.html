@@ -6,10 +6,7 @@
     <link rel="stylesheet" href="portfolio.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Londrina+Outline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
     <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -34,8 +31,8 @@
       </ul>
       <h1 class="title text-center">TAKASHI MINAGAWA</h1>
     </header>
-    <main>
-      <section class="about bg-light text-center">
+    <main class="text-center bg-light">
+      <section class="about">
         <div class="container">
           <h2 class="section-title mt-5">About Me</h2>
           <div class="thumbnail-name">
@@ -47,19 +44,77 @@
               <p>Takashi Minagawa</p>
             </div>
           </div>
-          <p class='text-contents'>1996年8月31日生まれ。千葉県柏市出身。<br>
-            九州大学芸術工学部音響設計学科４年。<br>
+          <p class='text-contents'>1996年8月31日生まれ。<br>
+            千葉県柏市出身。福岡県在住。<br>
+            九州大学芸術工学部音響設計学科在学中、現在４回生。<br>
             5歳から15歳にかけてパプアニューギニア、イタリア、インド、ウガンダに在住。<br>
-            趣味はギター。
+            趣味は音楽、ギター、読書。<br>
           </p>
         </div>
         </div>
       </section>
 
-      <section class="works bg-light py-5" id="works">
-        <div class="container">
-          <h2 class="section-title">Works</h2>
-          <p>Comming Soon...</p>
+      <section class="skills text-center">
+          <h2 class="section-title mt-5">Skills</h2>
+          <div class="skills-wrapper mt-5">
+            <div class="skill-box">
+              <i class="skill-icon fas fa-music"></i>
+              <div class="skill-title">MUSIC</div>
+              <p class="skill-text">
+                エレキギターを演奏します。<br>
+                自身のバンド活動やCoconalaでの耳コピ楽譜の販売を行なっています。<br>
+              </p>
+            </div>
+            <div class="skill-box">
+              <i class="skill-icon fas fa-code"></i>
+              <div class=" skill-title">CODING</div>
+              <p class="skill-text">
+                HTML/CSSを用いたWebページ制作、<br>
+                Pythonを用いたウェブアプリ制作、<br>
+                科学計算プログラム作成を行なっています。<br>
+                このサイトも自分でコーディングを行なって<br>
+                作成しております。
+              </p>
+            </div>
+            <div class="skill-box">
+              <i class="skill-icon fas fa-globe"></i>
+              <div class="skill-title">ENGLISH</div>
+              <p class="skill-text">
+                日常会話レベルの英会話を問題なく行えます。<br>
+                翻訳業務の経験もあります。<br>
+              </p>
+            </div>
+          </div>
+      </section>
+
+      <section class="works" id="works">
+        <h2 class="section-title">Works</h2>
+        <div class="works-wrapper mt-5">
+          <div class="work-box">
+            <div class="work-text">
+              <div class="work-title">ACROPHOBIA</div>
+              <p class="work-description">
+                現在自分が活動を行なっているインストバンドです。<br>
+                現在アルバム制作中。
+              </p>
+            </div>
+            <div class="work">
+              <iframe width="444" height="250" src="https://www.youtube.com/embed/vu0xImmU-gs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <iframe style="border: 0; width: 444px; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=732680357/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://acrophobia4.bandcamp.com/track/templa">TEMPLA by ACROPHOBIA</a></iframe>
+            </div>
+          </div>
+          <div class="work-box">
+            <div class="work-text">
+              <div class="work-title">ギター楽譜作成サービス@ココナラ</div>
+              <p class="work-description">
+                ココナラにてギター楽譜作成サービスを行なっております。<br>
+                現在20件以上の販売実績があります。<br>
+              </p>
+            </div>
+            <div class="work">
+              <a class="coconala-widget" href="https://coconala.com/services/452865" data-service_id="452865" data-width="244" data-comment="0" data-invite="0" data-user_id="522398">ギターのコード譜、タブ譜作成いたします 耳コピができない、けどあの曲が弾きたい！をお助けいたします。</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://coconala.com/js/coconala_widget.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','coconala-wjs');</script>
+            </div>
+          </div>
         </div>
       </section>
     </main>

@@ -11,7 +11,7 @@ html {
   box-sizing: border-box;
 }
 body{
-  font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-family: Lato, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   color: #333;
   font-size: 1.4rem;
 }
@@ -99,10 +99,70 @@ header .sns a i{
 }
 .text-contents{
   width: 350px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   line-height: 2.5;
 }
 
+/* skills */
+
+.skills-wrapper {
+  display: flex;
+  width: 80%;
+  margin: 50px auto 50px;
+  justify-content: space-around;
+}
+
+.skill-box {
+  width: 33%;
+}
+
+.skill-icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+  font-size: 8rem;
+  color: #333;
+}
+
+
+.skill-title {
+  margin: 0 20px 20px;
+  font-size: 2rem;
+}
+
+.skill-text {
+  margin: 0 20px;
+}
+
+/* works */
+.works-wrapper {
+  width: 80%;
+  margin: 0 auto 50px;
+  padding-bottom: 50px;
+}
+
+.work-box {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.work-box:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+.work-text {
+  text-align: left;
+}
+
+.work-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.work {
+  width: 444px;
+}
 
 /* footer */
 footer {
