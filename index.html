@@ -2,7 +2,9 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="portfolio.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -14,14 +16,16 @@
 
     <title>Takashi Minagawa</title>
 </head>
-<body>
+<body class="bg-light">
     <header>
-      <div class="sns">
-          <a href="https://twitter.com/tmtakashi7"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.facebook.com/tmtakashi"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://github.com/tmtakashi"><i class="fab fa-github"></i></a>
-      </div>
-      <ul class="nav">
+      <h1 class="title" id="top">TAKASHI MINAGAWA</h1>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link" href="#skills">Skills</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link link" href="#works">Works</a>
         </li>
@@ -29,67 +33,70 @@
           <a class="nav-link link" href="http://takalog.me/">Blog</a>
         </li>
       </ul>
-      <h1 class="title text-center">TAKASHI MINAGAWA</h1>
+      <div class="sns">
+          <a href="https://twitter.com/tmtakashi7"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/tmtakashi"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://github.com/tmtakashi"><i class="fab fa-github"></i></a>
+      </div>
     </header>
-    <main class="text-center bg-light">
-      <section class="about">
-        <div class="container">
-          <h2 class="section-title mt-5">About Me</h2>
-          <div class="thumbnail-name">
-            <div class="thumbnail">
-              <img src="images/profile.png">
-            </div>
-            <div class="name">
-              <p>皆川　孝志</p>
-              <p>Takashi Minagawa</p>
-            </div>
+    <main>
+      <section class="about" id="about">
+        <h2 class="section-title">About</h2>
+        <div class="thumbnail-name">
+          <div class="thumbnail">
+            <img src="images/profile.png">
           </div>
-          <p class='text-contents'>1996年8月31日生まれ。<br>
-            千葉県柏市出身。福岡県在住。<br>
-            九州大学芸術工学部音響設計学科在学中、現在４回生。<br>
-            5歳から15歳にかけてパプアニューギニア、イタリア、インド、ウガンダに在住。<br>
-            趣味は音楽、ギター、読書。<br>
-          </p>
+          <div class="name">
+            <p>皆川　孝志</p>
+            <p>Takashi Minagawa</p>
+          </div>
         </div>
-        </div>
+        <p class='text-contents'>1996年8月31日生まれ。<br>
+          千葉県柏市出身。福岡県在住。<br>
+          九州大学芸術工学部音響設計学科在学中、現在４回生。<br>
+          5歳から15歳にかけてパプアニューギニア、イタリア、インド、ウガンダに在住。<br>
+          趣味は音楽、ギター、読書。<br>
+          トムヤムクンを食べて死にたい。
+        </p>
+      </div>
       </section>
 
-      <section class="skills text-center">
-          <h2 class="section-title mt-5">Skills</h2>
-          <div class="skills-wrapper mt-5">
-            <div class="skill-box">
-              <i class="skill-icon fas fa-music"></i>
-              <div class="skill-title">MUSIC</div>
-              <p class="skill-text">
-                エレキギターを演奏します。<br>
-                自身のバンド活動やCoconalaでの耳コピ楽譜の販売を行なっています。<br>
-              </p>
-            </div>
-            <div class="skill-box">
-              <i class="skill-icon fas fa-code"></i>
-              <div class=" skill-title">CODING</div>
-              <p class="skill-text">
-                HTML/CSSを用いたWebページ制作、<br>
-                Pythonを用いたウェブアプリ制作、<br>
-                科学計算プログラム作成を行なっています。<br>
-                このサイトも自分でコーディングを行なって<br>
-                作成しております。
-              </p>
-            </div>
-            <div class="skill-box">
-              <i class="skill-icon fas fa-globe"></i>
-              <div class="skill-title">ENGLISH</div>
-              <p class="skill-text">
-                日常会話レベルの英会話を問題なく行えます。<br>
-                翻訳業務の経験もあります。<br>
-              </p>
-            </div>
+      <section class="skills" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-wrapper mt-5">
+          <div class="skill-box">
+            <i class="skill-icon fas fa-music"></i>
+            <div class="skill-title">MUSIC</div>
+            <p class="skill-text">
+              エレキギターを演奏します。<br>
+              自身のバンド活動やCoconalaでの耳コピ楽譜の販売を行なっています。<br>
+            </p>
           </div>
+          <div class="skill-box">
+            <i class="skill-icon fas fa-code"></i>
+            <div class=" skill-title">CODING</div>
+            <p class="skill-text">
+              HTML/CSSを用いたWebページ制作、<br>
+              Pythonを用いたウェブアプリ制作、<br>
+              科学計算プログラム作成を行なっています。<br>
+              このサイトも自分でコーディングを行なって<br>
+              作成しております。
+            </p>
+          </div>
+          <div class="skill-box">
+            <i class="skill-icon fas fa-globe-asia"></i>
+            <div class="skill-title">ENGLISH</div>
+            <p class="skill-text">
+              日常会話レベルの英会話を問題なく行えます。<br>
+              翻訳業務の経験もあります。<br>
+            </p>
+          </div>
+        </div>
       </section>
 
       <section class="works" id="works">
         <h2 class="section-title">Works</h2>
-        <div class="works-wrapper mt-5">
+        <div class="works-wrapper">
           <div class="work-box">
             <div class="work-text">
               <div class="work-title">ACROPHOBIA</div>
@@ -119,8 +126,8 @@
       </section>
     </main>
 
-    <footer class=" text-muted py-3">
-      <div  class="text-muted text-center link to-head">Go back to top</div>
+    <footer class="text-muted py-3">
+      <div  class="text-muted text-center"><a class="nav-link link" href="#top">Go back to top</a></div>
       <div class="sns text-center py-3">
         <a href="https://twitter.com/tmtakashi7"><i class="fab fa-twitter"></i></a>
         <a href="https://www.facebook.com/tmtakashi"><i class="fab fa-facebook-f"></i></a>
