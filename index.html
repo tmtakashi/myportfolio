@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="portfolio.css">
@@ -17,6 +17,7 @@
     <title>Takashi Minagawa</title>
 </head>
 <body class="bg-light">
+  <div id="wrapper">
     <header>
       <h1 class="title" id="top">TAKASHI MINAGAWA</h1>
       <ul class="nav justify-content-center">
@@ -27,16 +28,19 @@
           <a class="nav-link link" href="#skills">Skills</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link link" href="#jobs">Jobs</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link link" href="#works">Works</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link link" href="http://takalog.me/">Blog</a>
+          <a class="nav-link link" href="https://takalog.co">Blog</a>
         </li>
       </ul>
       <div class="sns">
-          <a href="https://twitter.com/tmtakashi7"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.facebook.com/tmtakashi"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://github.com/tmtakashi"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/tmtakashi7"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/tmtakashi"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://github.com/tmtakashi"><i class="fab fa-github"></i></a>
       </div>
     </header>
     <main>
@@ -58,83 +62,94 @@
           趣味は音楽、ギター、読書。<br>
           トムヤムクンを食べて死にたい。
         </p>
-      </div>
-      </section>
 
-      <section class="skills" id="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-wrapper mt-5">
-          <div class="skill-box">
-            <i class="skill-icon fas fa-music"></i>
-            <div class="skill-title">MUSIC</div>
-            <p class="skill-text">
-              エレキギターを演奏します。<br>
-              自身のバンド活動やCoconalaでの耳コピ楽譜の販売を行なっています。<br>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-wrapper">
+        <div class="skill-box">
+          <i class="skill-icon fas fa-music"></i>
+          <div class="skill-title">MUSIC</div>
+          <p class="skill-text">
+            エレキギターを演奏します。<br>
+            自身のバンド活動やCoconalaでの耳コピ楽譜の販売を行なっています。<br>
+          </p>
+        </div>
+        <div class="skill-box">
+          <i class="skill-icon fas fa-code"></i>
+          <div class=" skill-title">CODING</div>
+          <p class="skill-text">
+            HTML/CSSを用いたWebページ制作、<br>
+            Pythonを用いたウェブアプリ制作、<br>
+            音響信号処理、機械学習をおこなっています。<br>
+            このサイトも自分でコーディングを行なって<br>
+            作成しております。<br>
+            <a href="https://qiita.com/tmtakashi_dist">Qiita</a>で技術系の記事も書いております。
+          </p>
+        </div>
+        <div class="skill-box">
+          <i class="skill-icon fas fa-globe-asia"></i>
+          <div class="skill-title">ENGLISH</div>
+          <p class="skill-text">
+            日常会話レベルの英会話を問題なく行えます。<br>
+            翻訳業務の経験もあります。<br>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="jobs" id="jobs">
+      <h2 class="section-title">Jobs</h2>
+      <ul>
+        <li>2018年11月〜 株式会社Fusicにて機械学習エンジニアとしてインターン</li>
+      </ul>
+    </section>
+
+    <section class="works" id="works">
+      <h2 class="section-title">Works</h2>
+      <div class="works-wrapper">
+        <div class="work-box">
+          <div class="work-text">
+            <div class="work-title">ACROPHOBIA</div>
+            <p class="work-description">
+              現在自分が活動を行なっているインストバンドです。<br>
+              現在アルバム制作中。
             </p>
           </div>
-          <div class="skill-box">
-            <i class="skill-icon fas fa-code"></i>
-            <div class=" skill-title">CODING</div>
-            <p class="skill-text">
-              HTML/CSSを用いたWebページ制作、<br>
-              Pythonを用いたウェブアプリ制作、<br>
-              科学計算プログラム作成を行なっています。<br>
-              このサイトも自分でコーディングを行なって<br>
-              作成しております。
-            </p>
-          </div>
-          <div class="skill-box">
-            <i class="skill-icon fas fa-globe-asia"></i>
-            <div class="skill-title">ENGLISH</div>
-            <p class="skill-text">
-              日常会話レベルの英会話を問題なく行えます。<br>
-              翻訳業務の経験もあります。<br>
-            </p>
+          <div class="acrophobia">
+            <iframe width="444" height="250" src="https://www.youtube.com/embed/vu0xImmU-gs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe style="border: 0; width: 444px; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=732680357/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://acrophobia4.bandcamp.com/track/templa">TEMPLA by ACROPHOBIA</a></iframe>
           </div>
         </div>
-      </section>
-
-      <section class="works" id="works">
-        <h2 class="section-title">Works</h2>
-        <div class="works-wrapper">
-          <div class="work-box">
-            <div class="work-text">
-              <div class="work-title">ACROPHOBIA</div>
-              <p class="work-description">
-                現在自分が活動を行なっているインストバンドです。<br>
-                現在アルバム制作中。
-              </p>
-            </div>
-            <div class="work">
-              <iframe width="444" height="250" src="https://www.youtube.com/embed/vu0xImmU-gs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              <iframe style="border: 0; width: 444px; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=732680357/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://acrophobia4.bandcamp.com/track/templa">TEMPLA by ACROPHOBIA</a></iframe>
-            </div>
+        <div class="work-box">
+          <div class="work-text">
+            <div class="work-title">ギター楽譜作成サービス@ココナラ</div>
+            <p class="work-description">
+              ココナラにてギター楽譜作成サービスを行なっております。<br>
+              現在20件以上の販売実績があります。<br>
+            </p>
           </div>
-          <div class="work-box">
-            <div class="work-text">
-              <div class="work-title">ギター楽譜作成サービス@ココナラ</div>
-              <p class="work-description">
-                ココナラにてギター楽譜作成サービスを行なっております。<br>
-                現在20件以上の販売実績があります。<br>
-              </p>
-            </div>
-            <div class="work">
-              <a class="coconala-widget" href="https://coconala.com/services/452865" data-service_id="452865" data-width="244" data-comment="0" data-invite="0" data-user_id="522398">ギターのコード譜、タブ譜作成いたします 耳コピができない、けどあの曲が弾きたい！をお助けいたします。</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://coconala.com/js/coconala_widget.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','coconala-wjs');</script>
-            </div>
+          <div class="coconala">
+            <a class="coconala-widget" href="https://coconala.com/services/452865" data-service_id="452865" data-width="244" data-comment="0" data-invite="0" data-user_id="522398">ギターのコード譜、タブ譜作成いたします 耳コピができない、けどあの曲が弾きたい！をお助けいたします。</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://coconala.com/js/coconala_widget.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','coconala-wjs');</script>
           </div>
         </div>
-      </section>
-    </main>
-
-    <footer class="text-muted py-3">
-      <div  class="text-muted text-center"><a class="nav-link link" href="#top">Go back to top</a></div>
-      <div class="sns text-center py-3">
-        <a href="https://twitter.com/tmtakashi7"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.facebook.com/tmtakashi"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://github.com/tmtakashi"><i class="fab fa-github"></i></a>
       </div>
-      <p class="text-center">&copy Takashi Minagawa</p>
-    </footer>
+    </section>
+    </div>
+  </main>
+
+  <footer class="text-muted py-3">
+    <div  class="text-muted text-center"><a class="nav-link link" href="#top">Go back to top</a></div>
+    <div class="sns text-center py-3">
+      <a href="https://twitter.com/tmtakashi7"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/tmtakashi"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://github.com/tmtakashi"><i class="fab fa-github"></i></a>
+    </div>
+    <p class="text-center">&copy Takashi Minagawa</p>
+  </footer>
+
+  </div>
 
 
     <script src="portfolio.js">
