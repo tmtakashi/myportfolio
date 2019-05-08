@@ -1,10 +1,4 @@
 $(function(){
-
-  //Fade In Intro
-  $('body').hide().fadeIn(1500);
-
-
-
   //Link to Works
   $('a[href^="#"]').click(function() {
         var speed = 500;
